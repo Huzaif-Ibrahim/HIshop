@@ -11,12 +11,12 @@ const Cart = () => {
   return (
     <section className='mt-20 w-full max-w-7xl px-4 mx-auto font-medium flex flex-col justify-center'>
 
-    <div className="checkout z-19 shadow-black flex flex-col p-4 fixed bottom-4 right-4 bg-neutral-300 rounded-2xl text-black h-fit w-fit md:w-100">
+    <div className="checkout z-19 shadow-md flex flex-col p-4 fixed bottom-4 right-4 bg-white rounded-2xl text-black h-fit w-fit md:w-100">
       <h6 className='uppercase font-bold text-lg md:text-2xl py-1 border-b border-neutral-500/80'>Order Summary</h6>
 
       <p className='text-xl font-semibold mt-4'>Total : ${cartItems.reduce((acc ,curr) => acc + curr.totalPrice, 0).toFixed(2)}</p>
 
-      <div className='grid grid-cols-2 gap-2 mt-4'>
+      <div className='grid grid-cols-2 gap-2 mt-4 text-[10px] md:text-sm'>
         <button className='bg-black text-white py-1 w-full flex justify-center items-center rounded'>Checkout</button>
         <button onClick={()=>navigate('/')} className='bg-black text-white py-1 w-full flex justify-center items-center rounded'>Explore Store</button>
       </div>
