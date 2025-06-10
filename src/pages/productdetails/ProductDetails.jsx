@@ -23,7 +23,7 @@ const ProductDetails = () => {
     fetchSingleProduct()
   }, [id])
 
-  if (loading) {
+  if (loading || !singleProduct) {
     return (
       <section className="py-16 mt-48 max-w-7xl mx-auto">
         <div className="flex items-center justify-center h-64">
