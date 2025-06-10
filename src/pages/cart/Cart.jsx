@@ -16,7 +16,7 @@ const Cart = () => {
 
       <p className='text-xl font-semibold mt-4'>Total : ${cartItems.reduce((acc ,curr) => acc + curr.totalPrice, 0).toFixed(2)}</p>
 
-      <div className='grid grid-cols-2 gap-2 mt-4 text-[10px] md:text-sm'>
+      <div className='grid grid-cols-2 gap-2 mt-4 text-[14px] md:text-sm'>
         <button className='bg-black text-white py-1 w-full flex justify-center items-center rounded'>Checkout</button>
         <button onClick={()=>navigate('/')} className='bg-black text-white py-1 w-full flex justify-center items-center rounded'>Explore Store</button>
       </div>
